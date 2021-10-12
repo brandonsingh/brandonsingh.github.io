@@ -2,7 +2,7 @@
     width: 100%;
     height: 500px;;
     position: absolute;
-    background-image: url(/assignment3Pics/city.webp);
+    background-image: url(assignment3Pics/city.webp);
     background-repeat: no-repeat;
     background-size: 100%;
 }
