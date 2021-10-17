@@ -100,7 +100,7 @@
 
 @keyframes slide {
   0% {margin-left: 0px;}
-  50% {margin-left: -50%; }
+  50% {margin-left: -100%; }
   /* 66% {margin-left: -150%;} */
   100% {margin-left: -200%;}
 }
@@ -285,6 +285,14 @@
  td {
   line-height: 15px;
  }
+ a {
+   text-decoration: none;
+   color:white;
+ }
+ a:hover {
+  background-color:skyblue;
+  color: gray;
+}
   hr {
     width: 85%;
   }
