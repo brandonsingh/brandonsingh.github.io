@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- block 1: Logo and title -->
+    <div class='header'>
+
+        <div class='logoBox'><img class='shoryu' src="picsProject2/shoryu.jpg" alt=""></div>
+        
+        <div class='titleBox'>
+            <h1>FGC Station</h1>
+            <h4>A site for the latest releases and news</h4>
+        </div>
+    </div>
+    <br><br>
+    <!-- block 2: banner slideshow, background image, and text box overlapped -->
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide">
+                some text
+            </div>
+            <div class="slide">
+                some text 2
+            </div>
+        </div>
+    </div>
+    <div class='backPic'>
+        <p class='textbox'>some content on top on the pic</p>
+    </div>
+
+    <!-- block 3: 2x1 divs -->
+    <div class='twoByone'>
+        <div class=square>
+            <img src="picsProject2/shoryu.jpg" alt="">
+        </div>
+    
+        <div class=square>
+            <p>some text</p>       
+        </div>
+    </div>
+
+    <!-- block 4: the modal window products -->
+    <div class='container'>
+        <div class='box'>
+            <img class='game' src="/picsProject2/ggst.jpg" alt="">
+            <p>Guilty Gear Strive</p>
+            <p>$59.99</p>
+            <a class="button b1" href="#popup1">ADD TO BAG</a>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <div><img src="picsProject2/ggst.jpg" alt=""></div>
+                    <a class='button b2' href="#popup2">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class='box'>
+            <img class='game' src="/picsProject2/nasb.jpg" alt="">
+            <p>Nickelodeon All Star Brawl</p>
+            <p>$49.99</p>
+            <a class='button b2' href="#popup2">ADD TO BAG</a>
+        </div>
+        <div id='popup2' class='overlay'>
+            <div class="popup">
+                <h2>Here i am</h2>
+                    <a class="close" href="#">&times;</a>
+               <div class="content">
+                    <img src="picsProject2/nasb.jpg" alt="">
+                    <a class='button b2' href="#popup3">Continue Shopping</a>
+               </div>
+            </div>
+        </div>
+
+        <div class='box'>
+            <img class='game' src="/picsProject2/mbtl.webp" alt="">
+            <p>Melty Blood Type Lumina</p>
+            <p>$59.99</p>
+            <a class='button b3' href="#popup3">ADD TO BAG</a>
+        </div>
+        <div id='popup3' class='overlay'>
+            <div class="popup">
+                <h2>Here i am</h2>
+                    <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <img src="picsProject2/mbtl.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- block 5: footer with links -->
+    <footer>
+        <div class='foo'>
+            <table>
+                <tr>
+                    <th>HELP</th>
+                    <th>ACCOUNT</th>
+                    <th>SUBSCRIBE</th>
+                    <th>THE MEMBER CARD</th>
+                </tr>
+                <tr>
+                    <td>Customer Service</td>
+                    <td>Your Account</td>
+                    <td>Emails</td>
+                    <td>Learn More</td>
+                </tr>
+                <tr>
+                    <td>Live Chat</td>
+                    <td>Order Status</td>
+                    <td>Store Offers and Events</td>
+                    <td>Pay My Bill</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <hr>
+    </footer>
+</body>
+</html>
