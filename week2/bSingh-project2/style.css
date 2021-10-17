@@ -123,17 +123,24 @@
   }
   .twoByone {
       display: block;
-      margin-top: 760px;
-      width: 100%;
-      height: 300px;
-
+      margin: 760px 50px 0px 20%;
+      width: 90%;
+      height: 250px;
+      
   }
- .square img {
+ /* .square img {
      position: inherit;
      height: 100%;
      width: 100%;
+     border: 2px solid white;
+ } */
+ .ewgf {
+  background-image: url(picsProject2/ewgf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
  }
 .square {
+ 
     width: 35%;
     margin: auto;
     height: 100%;
@@ -253,6 +260,7 @@
       width: 100%;
       margin-top: 440px;
       background-color: black;
+      color: white;
   }
   .foo {
     color: white;
@@ -269,6 +277,13 @@
  }
   hr {
     width: 85%;
+  }
+  .connectBox {
+    width: fit-content;
+    float: right;
+    margin: 1%;
+    padding: 2%;
+    border: 2px solid red;
   }
   @media screen and (max-width: 1000px){
     .box{
