@@ -69,17 +69,30 @@ let arrTotal = (arr) => {
     return total;
 }
 
-if (arrTotal(netsScore1) > arrTotal(knicksScore1)) {
-    console.log(`The Nets had the higher score in set 1 with ${arrTotal(netsScore1)} points`);
-} else if (arrTotal(netsScore1) < arrTotal(knicksScore1)) {
-    console.log(`The Knicks had the higher score in set 1 with ${arrTotal(knicksScore1)} points`);
+function whoWon(arr1, arr2) {
+    if (arrTotal(arr1) > arrTotal(arr2)) {
+        console.log(`The Nets had the higher score in set 1 with ${arrTotal(arr1)} points`);
+    } else if (arrTotal(arr1) < arrTotal(arr2)) {
+        console.log(`The Knicks had the higher score in set 1 with ${arrTotal(arr2)} points`);
+    } else {
+        console.log(`In set 2 the Knicks and Nets tied! Each scoring ${arrTotal(arr1)} points`);
+    }
 }
 
-if (arrTotal(netsScore2) > arrTotal(knicksScore2)) {
-    console.log(`The Nets had the higher score in set 1 with ${arrTotal(netsScore2)} points`);
-} else if (arrTotal(netsScore2) < arrTotal(knicksScore2)) {
-    console.log(`The Knicks had the higher score in set 1 with ${arrTotal(knicksScore2)} points`);
-} else {
-    console.log(`In set 2 the Knicks and Nets tied! Each scoring ${arrTotal(knicksScore2)} points`);
-}
+whoWon(netsScore1,knicksScore1);
+whoWon(netsScore2,knicksScore2);
+
+// if (arrTotal(netsScore1) > arrTotal(knicksScore1)) {
+//     console.log(`The Nets had the higher score in set 1 with ${arrTotal(netsScore1)} points`);
+// } else if (arrTotal(netsScore1) < arrTotal(knicksScore1)) {
+//     console.log(`The Knicks had the higher score in set 1 with ${arrTotal(knicksScore1)} points`);
+// }
+
+// if (arrTotal(netsScore2) > arrTotal(knicksScore2)) {
+//     console.log(`The Nets had the higher score in set 1 with ${arrTotal(netsScore2)} points`);
+// } else if (arrTotal(netsScore2) < arrTotal(knicksScore2)) {
+//     console.log(`The Knicks had the higher score in set 1 with ${arrTotal(knicksScore2)} points`);
+// } else {
+//     console.log(`In set 2 the Knicks and Nets tied! Each scoring ${arrTotal(knicksScore2)} points`);
+// }
 
