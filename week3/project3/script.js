@@ -5,7 +5,7 @@ function randNum() {
   }
 
   let score = 10;
-  let guessCount = 0;
+  let guessCount = 1;
   let guesses = document.querySelector('.guesses');
   let answer = document.querySelector('.answer');
   let lowOrHi = document.querySelector('.lowOrHi');
@@ -23,7 +23,7 @@ let tally = (maxScore, count) => {
   return maxScore - count;
 }
 
-scoreCount.textContent = 'Score: ' + tally(score, guessCount);
+scoreCount.textContent = 'Score: ' + score;
 
 let best = (newScore) => {
   if (newScore > highest) {
@@ -61,9 +61,9 @@ function guessingGame() {
       console.log(scoreCount.textContent = 'Score: ' + tally(score, guessCount));
       best(tally(score, guessCount)); //intializing best score
       gameOver();
-    }else if(guessCount === 1){
+    }else if(guessCount === 10){
       answer.textContent = number;
-      scoreCount.textContent = 'Score: ' + tally(score, guessCount);
+      scoreCount.textContent = 'Score: 0';
       guesses.textContent += x + ', ';
       lowOrHi.textContent = 'YOU LOSE';
       gameOver();
@@ -108,7 +108,7 @@ function gameOver() {
   resetButton.addEventListener('click', reset);
 }
 function reset() {
-  guessCount = 0;
+  guessCount = 1;
   let resetPar = document.querySelectorAll('.resultPar p');
   for(let i = 0 ; i < resetPar.length ; i++) {
     resetPar[i].textContent = '';
